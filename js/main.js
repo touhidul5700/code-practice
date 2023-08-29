@@ -7,14 +7,14 @@ function setInnerText() {
 
 
 
-    if (inputValue == "77"){
+    if (inputValue == "sir"){
         panel.style.display="none"
         hiden.style.display="block"
-        secret.innerText ="I am going on Monday"
+        secret.innerText ="পড়া পড়ো এটে তোমার কি?"
     }
         else{
         //window.close();
-        alert("Enter Correct Password")
+        alert("ভালো করি পাসওয়ার্ড দে")
     }
 
 }

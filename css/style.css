@@ -37,4 +37,16 @@ html, body{
 
 #hiden{
     display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#hiden h1{
+    font-size: 40px;
+    color: #feba00;
 }
