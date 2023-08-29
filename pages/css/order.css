@@ -1,0 +1,252 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #424747;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+    color: #e0e7e9 !important;
+}
+
+/* //////////nav part/////// */
+.menu {
+    position: sticky;
+    top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000c4 !important;
+    color: white !important;
+}
+
+.nav-logo {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn-offer-css {
+    background-color: #e2c131 !important;
+    color: #595f64 !important;
+}
+
+.btn-offer-css:hover {
+    background-color: #fff200 !important;
+}
+
+/* /////////hero////////////// */
+.hero {
+    background-image: linear-gradient(-180deg, #000000a9, #000000b0), url(../img/hero-bg-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+    color: rgba(255, 255, 255, 0.966) !important;
+    line-height: 15px;
+}
+
+h1 {
+    color: #ffff00 !important;
+    font-size: 50px;
+}
+
+/* ///////booking part //////////// */
+.booking-container {
+    margin: 50px;
+}
+
+.booking-container .booking-heading {
+    text-align: center;
+}
+
+.booking-container span {
+    color: #ffff00 !important;
+}
+
+/*//////// form start////// */
+.form-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+
+.form-booking {
+    flex: 3;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-booking input {
+    width: 95%;
+    padding: 10px;
+    border: 0;
+    background-color: #e0e7e9;
+    border-radius: 20px;
+    border-bottom: 4px solid #fff200 !important;
+    color: #000 !important;
+}
+
+.form-booking button {
+    padding: 5px 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #e2c131;
+    border: none;
+}
+
+.Bkash ::placeholder {
+    color: rgb(0, 0, 0) !important;
+    text-align: center;
+}
+
+.form-booking button:hover {
+    background-color: rgb(232, 217, 151) !important;
+}
+
+/* ///////footer part///////// */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-content-container {
+    display: flex;
+}
+
+.footer-col-1 {
+    display: flex;
+    line-height: 10px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.footer-col-1 h2 {
+    margin-bottom: 20px;
+}
+
+.footer-col-2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-col-2 h2 {
+    color: #e2c131 !important;
+}
+
+.social-link img {
+    margin: 5px;
+}
+
+.social-link img:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.footer-col-3 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+.footer-col-3 h2 {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+@media(max-width:767px) {
+    .toggler-css {
+        background: #676262;
+        color: #e0e7e9 !important;
+    }
+
+    .form-container {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .form-testimonial button {
+        padding: 5px 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        background-color: #e2c131;
+        border: none;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .collecton-name {
+        margin-bottom: 20px;
+    }
+
+    .btn-offer-css {
+        margin-top: 20px;
+    }
+
+    .mob-n {
+        display: none;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .btn button {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .booking-container {
+        margin: 0;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .form-booking {
+        padding: 0;
+    }
+
+    .form-booking input {
+        width: 100%;
+    }
+
+    .booking-heading h2 {
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-content-container {
+        flex-direction: column;
+    }
+}

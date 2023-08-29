@@ -1,0 +1,133 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+    color: #e0e7e9 !important;
+}
+
+/* //////////nav part/////// */
+.menu {
+    position: sticky;
+    top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000c4 !important;
+    color: white !important;
+}
+
+.nav-logo {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn-offer-css {
+    background-color: #e2c131 !important;
+    color: #595f64 !important;
+}
+
+.btn-offer-css:hover {
+    background-color: #fff200 !important;
+}
+
+/* /////////hero////////////// */
+.hero {
+    background-image: linear-gradient(-180deg, #000000a9, #000000b0), url(../img/hero-bg-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 0;
+    color: rgba(255, 255, 255, 0.966) !important;
+    line-height: 15px;
+}
+
+h1 {
+    color: #ffff00 !important;
+    font-size: 50px;
+}
+
+span {
+    color: #ffff00 !important;
+}
+
+/* ///////footer part///////// */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-content-container {
+    display: flex;
+}
+
+.footer-col-1 {
+    display: flex;
+    line-height: 10px;
+    flex: 1;
+    flex-direction: column;
+}
+
+.footer-col-1 h2 {
+    margin-bottom: 20px;
+}
+
+.footer-col-2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-col-2 h2 {
+    color: #e2c131 !important;
+}
+
+.social-link img {
+    margin: 5px;
+}
+
+.social-link img:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.footer-col-3 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+.footer-col-3 h2 {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+@media(max-width:767px) {
+    .toggler-css {
+        background: #676262;
+        color: #e0e7e9 !important;
+    }
+
+    .btn-offer-css {
+        margin-top: 20px;
+    }
+
+    .footer-content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
