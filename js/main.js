@@ -13,7 +13,8 @@ function setInnerText() {
         secret.innerText ="I am going on Monday"
     }
         else{
-        window.close();
+        //window.close();
+        alert("Enter Correct Password")
     }
 
 }
