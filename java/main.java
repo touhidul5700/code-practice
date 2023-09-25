@@ -1,55 +1,25 @@
+import java.util.Scanner; //use this import function for getting input
 
+class input {
+    public static void main(String[] args) {
+        //int a, b, sum;
 
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("Enter a value: ");
+        int a = input.nextInt();
 
+        System.out.println("Enter b value: ");
+        int b = input.nextInt();
 
+        int sum = a + b;
 
+        System.out.println("The sum is = " + sum);
 
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* import java.util.Scanner; //use this import function for getting input
-
-//biggest number among trhee numbers
+// biggest number among trhee numbers
 class BiggestNumberFinder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -81,8 +51,7 @@ class BiggestNumberFinder {
     }
 }
 
-
-//Area of triangle
+// Area of triangle
 class TriangleArea {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -103,4 +72,4 @@ class TriangleArea {
     public static double calculateTriangleArea(double base, double height) {
         return 0.5 * base * height;
     }
-} */
+}
