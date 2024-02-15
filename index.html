@@ -7,7 +7,7 @@
     <!-- website title -->
     <title>Code Practice</title>
 
-    <!-- bootstrap css ---------->
+    <!--  bootstrap css ---------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
@@ -16,51 +16,236 @@
 </head>
 
 <body>
+    <div id="checkcdncs"></div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button id="tab1btn" class="nav-link active" aria-current="page">Tab-1</button>
+      <li class="nav-item">
+            <button id="tab2btn" class="active nav-link">Tab-2</button>
+        </li>
+        <li class="nav-item">
+            <button id="tab3btn" class="active nav-link">Tab-3</button>
+        </li>
 
-    <form id="emailForm">
-        <label for="recipientEmail">Recipient's Email:</label>
-        <input type="email" id="recipientEmail" required>
-        <br>
-        <label for="message">Message:</label>
-        <textarea id="message" required></textarea>
-        <br>
-        <label for="image">Select an Image:</label>
-        <input type="file" id="image" accept="image/*" required>
-        <br>
-        <input type="submit" value="Send Email">
-    </form>
-    
+    </ul>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("service_qnc2irh"); // Replace with your EmailJS user ID
-        })();
-    </script>
+    <!-- ---------------------------
+     -------------- Tab-1-----------  
+    ------------------------------- -->
+    <div id="tab1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+                <div class="col">
+                    <h1>hello World</h1>
+                    <br>
+                    <img src="img/image_3.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic dolore veritatis facere, aut
+                        sint
+                        recusandae eveniet ipsam assumenda ab doloremque, eligendi dolorum dolorem porro tenetur itaque
+                        voluptatem
+                        consequuntur illum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script type="text/javascript">
-        document.getElementById('emailForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-    
-            const recipientEmail = document.getElementById('recipientEmail').value;
-            const message = document.getElementById('message').value;
-            const image = document.getElementById('image').files[0];
-    
-            const formData = new FormData();
-            formData.append('recipientEmail', recipientEmail);
-            formData.append('message', message);
-            formData.append('image', image);
-    
-            emailjs.sendForm('service_qnc2irh', 'template_a4sq39q', formData)
-                .then(function(response) {
-                    alert('Email sent successfully!');
-                }, function(error) {
-                    alert('Error sending email: ' + error);
-                });
-        });
-    </script>
-    
+    <!-- ---------------------------
+     -------------- Tab-2-----------  
+    ------------------------------- -->
+    <div style="display: none;" id="tab2" class="nav-taps">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+                <div class="col">
+                    <h1>Welcome to tab2</h1>
+                    <br>
+                    <img src="img/image_2.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ut id et amet dolor, culpa
+                        doloribus
+                        molestias
+                        reiciendis necessitatibus, itaque pariatur ab laboriosam fugiat animi voluptate. Vero aut
+                        accusantium quis?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ---------------------------
+     -------------- Tab-3-----------  
+    ------------------------------- -->
+    <div style="display: none;" id="tab3" class="nav-taps">
+        <h1>hello tab-3</h1><br>
+        <img src="img/bg_3.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis accusantium suscipit enim nam
+            est aspernatur atque veniam, obcaecati voluptatum doloremque animi cumque veritatis, harum blanditiis
+            officia mollitia iure ab?
+        </p>
+    </div>    </li>
+
+
+    <!-- WhatsApp chat---------- -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-ef417277-2ef0-42c9-91f0-077d4a5fdad8"></div>
 
 
     <!-- Bootstrap js------------------- -->
@@ -69,7 +254,8 @@
         crossorigin="anonymous"></script>
 
     <!-- javascript ------------------- -->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="https://raw.githack.com/cstrapcdn/cstrap/main/cstrap.js"></script>
 </body>
 
 </html>
